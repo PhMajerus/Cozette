@@ -121,11 +121,11 @@ DisplaySize: 13
 AntiAlias: 1
 FitToEm: 0
 WidthSeparation: 307
-WinInfo: 1665 37 14
+WinInfo: 3105 23 16
 BeginPrivate: 0
 EndPrivate
 TeXData: 1 0 0 524288 262144 174762 0 -1048576 174762 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-BeginChars: 1114112 6122
+BeginChars: 1114112 6123
 
 StartChar: uni0000
 Encoding: 0 0 0
@@ -16667,10 +16667,8 @@ EndChar
 StartChar: ohorn
 Encoding: 417 417 1836
 Width: 1024
-Flags: W
+Flags: HW
 LayerCount: 2
-Fore
-Validated: 1
 EndChar
 
 StartChar: uni01A2
@@ -21513,10 +21511,8 @@ EndChar
 StartChar: uni01BD
 Encoding: 445 445 2374
 Width: 1024
-Flags: W
+Flags: HW
 LayerCount: 2
-Fore
-Validated: 1
 EndChar
 
 StartChar: uni01BF
@@ -50717,6 +50713,13 @@ Width: 1024
 Flags: HW
 LayerCount: 2
 EndChar
+
+StartChar: uni2982
+Encoding: 10626 10626 6122
+Width: 1024
+Flags: HW
+LayerCount: 2
+EndChar
 EndChars
 BitmapFont: 13 6124 10 3 1
 BDFStartProperties: 42
@@ -63008,6 +63011,8 @@ BDFChar: 6120 984063 6 0 6 0 5
 r('@L8jiXZ
 BDFChar: 6121 985783 6 0 6 0 6
 4sI_<^4>tY
+BDFChar: 6122 10626 6 2 4 0 6
+i1T!.i1T!.
 BDFRefChar: 1999 1944 0 0 N
 BDFRefChar: 2000 1943 0 0 N
 BDFRefChar: 2001 1941 0 0 N
