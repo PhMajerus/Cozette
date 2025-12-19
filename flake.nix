@@ -14,6 +14,7 @@
       system:
       let
         pkgs = nixpkgs.legacyPackages.${system};
+        inherit (pkgs) lib;
       in
       {
         devShells = {
@@ -33,7 +34,19 @@
           # Derivation to build and install cozette
           cozette = pkgs.stdenvNoCC.mkDerivation {
             pname = "cozette";
-            version = "1.28.0";
+            version =
+              let
+                sfdLines = lib.strings.splitString "\n" (builtins.readFile ./Cozette/Cozette.sfd);
+                sfdVersionLine = lib.lists.findFirst (l: lib.strings.hasPrefix "Version: " l) null sfdLines;
+                sfdVersion =
+                  if sfdVersionLine != null then lib.strings.removePrefix "Version: " sfdVersionLine else "0.00";
+                majorRest = lib.strings.splitString "." sfdVersion;
+                major = builtins.elemAt majorRest 0;
+                minorPatch = builtins.elemAt majorRest 1;
+                minor = builtins.substring 0 2 minorPatch;
+                patch = builtins.substring 2 1 minorPatch;
+              in
+              "${major}.${minor}.${patch}";
 
             src = ./.;
 
@@ -55,7 +68,7 @@
 
             postPatch = ''
               substituteInPlace build.py --replace-fail \
-                'bitsnpicas.sh' '${pkgs.lib.getExe pkgs.bitsnpicas}'
+                'bitsnpicas.sh' '${lib.getExe pkgs.bitsnpicas}'
             '';
 
             buildPhase = ''
