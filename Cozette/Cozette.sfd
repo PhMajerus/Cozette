@@ -52361,7 +52361,7 @@ Flags: W
 LayerCount: 2
 EndChar
 EndChars
-BitmapFont: 13 6357 10 3 1
+BitmapFont: 13 6358 10 3 1
 BDFStartProperties: 42
 FONT 1 "-inesw-Cozette-Medium-R-Normal--13-120-75-75-M-60-ISO10646-1"
 COMMENT 0 "(c) 2020-2025 Ines @ the.moonwit.ch"
@@ -65119,8 +65119,8 @@ BDFChar: 6354 130042 6 1 5 0 7
 +E2:=E;0DU
 BDFChar: 6355 128276 12 2 10 -2 8
 #QR$gIfOruIfOruIfTM!s*td`#QOi)
-BDFChar: 6356 128277 12 2 10 -2 8
-L]C`]0*#&RCB/JWH3!mDrdYsg#QOi)
+BDFChar: 6356 128277 12 2 11 -2 8
+L]C`]0*#&RCB/JWH3!mDrdYtR#QOi)
 BDFRefChar: 1999 1944 0 0 N
 BDFRefChar: 2000 1943 0 0 N
 BDFRefChar: 2001 1941 0 0 N
