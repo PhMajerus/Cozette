@@ -7,6 +7,22 @@ The format is based on [Keep a Changelog], and this project adheres to
 
 ## [Unreleased]
 
+## [2.0.0]
+
+### Important:
+
+- The foundry has changed to `samhain`.
+- The copyright notice changed to include contributors - if you use or distribute Cozette please remember to update the copyright notice.
+- Regular and Bold font variants changed to same name but different styles so that they form a single font family
+
+Thank you to the contributors:
+- [PhMajerus](https://www.github.com/PhMajerus)
+- [breitnw](https://www.github.com/breitnw)
+- [kachick](https://www.github.com/kachick)
+- [Eejit43](https://www.github.com/Eejit43)
+- [WhyNotHugo](https://www.github.com/WhyNotHugo)
+- [Mogwump](https://www.github.com/Mogwump)
+
 ### Added
 
 - ⊌ (U+228C MULTISET)
@@ -379,6 +395,30 @@ The format is based on [Keep a Changelog], and this project adheres to
 - 🧻 (U+1F9FB ROLL OF PAPER)
 - 🧼 (U+1F9FC BAR OF SOAP)
 - 🧽 (U+1F9FD SPONGE)
+- 🨀 (U+1FA00 NEUTRAL CHESS KING)
+- 🨁 (U+1FA01 NEUTRAL CHESS QUEEN)
+- 🨂 (U+1FA02 NEUTRAL CHESS ROOK)
+- 🨃 (U+1FA03 NEUTRAL CHESS BISHOP)
+- 🨄 (U+1FA04 NEUTRAL CHESS KNIGHT)
+- 🨅 (U+1FA05 NEUTRAL CHESS PAWN)
+- 🨞 (U+1FA1E WHITE CHESS TURNED KING)
+- 🨟 (U+1FA1F WHITE CHESS TURNED QUEEN)
+- 🨠 (U+1FA20 WHITE CHESS TURNED ROOK)
+- 🨡 (U+1FA21 WHITE CHESS TURNED BISHOP)
+- 🨢 (U+1FA22 WHITE CHESS TURNED KNIGHT)
+- 🨣 (U+1FA23 WHITE CHESS TURNED PAWN)
+- 🨤 (U+1FA24 BLACK CHESS TURNED KING)
+- 🨥 (U+1FA25 BLACK CHESS TURNED QUEEN)
+- 🨦 (U+1FA26 BLACK CHESS TURNED ROOK)
+- 🨧 (U+1FA27 BLACK CHESS TURNED BISHOP)
+- 🨨 (U+1FA28 BLACK CHESS TURNED KNIGHT)
+- 🨩 (U+1FA29 BLACK CHESS TURNED PAWN)
+- 🨪 (U+1FA2A NEUTRAL CHESS TURNED KING)
+- 🨫 (U+1FA2B NEUTRAL CHESS TURNED QUEEN)
+- 🨬 (U+1FA2C NEUTRAL CHESS TURNED ROOK)
+- 🨭 (U+1FA2D NEUTRAL CHESS TURNED BISHOP)
+- 🨮 (U+1FA2E NEUTRAL CHESS TURNED KNIGHT)
+- 🨯 (U+1FA2F NEUTRAL CHESS TURNED PAWN)
 - 🩸 (U+1FA78 DROP OF BLOOD)
 - 🩹 (U+1FA79 ADHESIVE BANDAGE)
 - 🪎 (U+1FA8E)
@@ -467,7 +507,6 @@ The format is based on [Keep a Changelog], and this project adheres to
 - 󰏿 (U+F03FF)
 - 󰜺 (U+F073A)
 - 󰪷 (U+F0AB7)
-
 
 ## [1.30.0]
 
@@ -6067,7 +6106,8 @@ Still broken on Windows.
 
 [keep a changelog]: https://keepachangelog.com/en/1.0.0/
 [semantic versioning]: https://semver.org/spec/v2.0.0.html
-[unreleased]: https://github.com/the-moonwitch/Cozette/compare/v.1.30.0...HEAD
+[unreleased]: https://github.com/the-moonwitch/Cozette/compare/v.2.0.0...HEAD
+[1.30.0]: https://github.com/the-moonwitch/Cozette/compare/v.1.30.0...v.2.0.0
 [1.30.0]: https://github.com/the-moonwitch/Cozette/compare/v.1.29.0...v.1.30.0
 [1.29.0]: https://github.com/the-moonwitch/Cozette/compare/v.1.28.0...v.1.29.0
 [1.28.0]: https://github.com/the-moonwitch/Cozette/compare/v.1.27.0...v.1.28.0
