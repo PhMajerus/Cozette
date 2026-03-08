@@ -26,9 +26,13 @@ jobs:
         run: pacman -S --noconfirm fontforge
       - uses: actions/checkout@v4
       - name: Build fonts
+        env:
+          PIPENV_IGNORE_VIRTUALENVS: "1"
+          PIPENV_VENV_IN_PROJECT: "0"
+          PIPENV_USE_SYSTEM: "1"
         run: |
-          pipenv --python /bin/python install --skip-lock --system --break-system-packages
-          pipenv run python build.py fonts
+          pipenv install --system --skip-lock --deploy --break-system-packages
+          python build.py fonts
       - name: Save version
         id: version
         run: |
