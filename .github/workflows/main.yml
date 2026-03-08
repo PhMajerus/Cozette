@@ -32,7 +32,7 @@ jobs:
           PIPENV_VENV_IN_PROJECT: "0"
           PIPENV_USE_SYSTEM: "1"
         run: |
-          pipenv install --system --skip-lock --break-system-packages
+          pipenv install --system --skip-lock
           python build.py fonts
       - name: Save version
         id: version
