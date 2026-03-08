@@ -27,12 +27,8 @@ jobs:
           pacman -S --noconfirm fontforge
       - uses: actions/checkout@v4
       - name: Build fonts
-        env:
-          PIPENV_IGNORE_VIRTUALENVS: "1"
-          PIPENV_VENV_IN_PROJECT: "0"
-          PIPENV_USE_SYSTEM: "1"
         run: |
-          pipenv install --system --skip-lock
+          pip install fonttools Pillow crayons gitpython setuptools
           python build.py fonts
       - name: Save version
         id: version
