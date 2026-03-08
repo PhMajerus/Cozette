@@ -18,13 +18,11 @@ jobs:
       - name: Install dependencies
         run: |
           pacman -S --noconfirm base git tar which zip libffi jre17-openjdk wget
-          pacman -S --noconfirm python-numpy
       - name: Install python
         run: |
           pacman -S --noconfirm python python-pip python-pipenv python-setuptools
       - name: Install fontforge
-        run:
-          pacman -S --noconfirm fontforge
+        run: pacman -S --noconfirm fontforge
       - uses: actions/checkout@v4
       - name: Build fonts
         run: |
