@@ -27,7 +27,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Build fonts
         run: |
-          pipenv --python /bin/python install --skip-lock --system
+          pipenv --python /bin/python install --skip-lock --system --break-system-packages
           pipenv run python build.py fonts
       - name: Save version
         id: version
