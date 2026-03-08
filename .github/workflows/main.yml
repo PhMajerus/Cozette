@@ -18,6 +18,7 @@ jobs:
       - name: Install dependencies
         run: |
           pacman -S --noconfirm base git tar which zip libffi jre17-openjdk wget
+          pacman -S --noconfirm python-numpy
       - name: Install python
         run: |
           pacman -S --noconfirm python python-pip python-pipenv python-setuptools
@@ -26,7 +27,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Build fonts
         run: |
-          pipenv --python /bin/python install
+          pipenv --python /bin/python install --skip-lock --system
           pipenv run python build.py fonts
       - name: Save version
         id: version
